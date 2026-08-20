@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./abc.css">
+    <style>
+        h1 {
+            background-color: blue;
+        }
+    </style>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="parent">
+        parent
+        <h1>hello</h1>
+        <div id="child">
+            child
+        </div>
+    </div>
+    <!-- specificity -->
+    <h1>hello </h1>
+    <h1>Hello</h1>
+    <p>paragraph</p>
+    <p class="one" id="id" style="background-color: cadetblue;">paragraph2</p>
+
+    <h1>Block</h1>
+    <img src="" alt="dummy">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae excepturi numquam earum nisi<span>hello</span>
+        repellat eum similique, maiores laudantium culpa, est, distinctio et consequuntur quia corporis.</p>
+
+    <div class="parent">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae blanditiis voluptatum saepe velit ipsam
+        repudiandae facilis, facere perferendis cupiditate odio, fugiat omnis ex eaque similique nihil veniam! Nihil,
+        ratione molestias.
+    </div>
+    <div class="parent">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae blanditiis voluptatum saepe velit ipsam
+        repudiandae
+        facilis, facere perferendis cupiditate odio, fugiat omnis ex eaque similique nihil veniam! Nihil, ratione
+        molestias.
+    </div>
+    <div class="parent">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae blanditiis voluptatum saepe velit ipsam
+        repudiandae
+        facilis, facere perferendis cupiditate odio, fugiat omnis ex eaque similique nihil veniam! Nihil, ratione
+        molestias.
+    </div>
+
+    <!-- flex -->
+    <div class="parent">
+        <div class="child one">1</div>
+        <div class="child two">2</div>
+        <div class="child three">3</div>
+    </div>
+
+    <!-- box model -->
+    <div class="element">
+        hello world!
+    </div>
+    <div class="element">
+        hello world!
+    </div>
+    <div class="element">
+        hello world!
+    </div>
+</body>
+
+</html>

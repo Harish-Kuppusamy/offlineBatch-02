@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    background-color: rgb(180, 200, 120);
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 900;
+    border: 5px solid blue;
+}
+
+.parent {
+    height: 800px;
+    width: 400px;
+    background-color: bisque;
+}
+
+.parent h1 {
+    background-color: aquamarine;
+}
+
+#child {
+    width: 50%;
+    background-color: black;
+}
+
+#id {
+    background-color: aqua;
+}
+
+.one {
+    background-color: pink;
+}
+
+h1,
+p {
+    background-color: red;
+}
+
+p {
+    background-color: blueviolet;
+}
+
+
+p {
+    background-color: blue;
+}
+
+p:hover {
+    background-color: red;
+}
+
+p:active {
+    background-color: red;
+}
+
+h1::before {
+    content: "Harish";
+    background-color: chartreuse;
+    color: brown;
+}
+
+h1::after {
+    content: "Harish";
+    background-color: chartreuse;
+    color: brown;
+}
+
+h1 {
+    width: 500px;
+    background-color: red;
+    color: black;
+    display: block;
+}
+
+img {
+    display: none;
+    width: 500px;
+    background-color: red;
+    color: black;
+}
+
+.parent {
+    width: 150px;
+    height: 250px;
+    background-color: red;
+    color: white;
+    padding: 30px 40px;
+    border: 5px solid blue;
+    margin-top: 30px;
+    margin-left: 50px;
+    box-sizing: content-box;
+}
+
+.parent {
+    width: 70%;
+    height: 70vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.child {
+    flex-basis: 150px;
+}
+
+.one {
+    background-color: red;
+    flex: 1 1 250px;
+}
+
+.two {
+    background-color: blue;
+    flex-shrink: 0;
+}
+
+.three {
+    background-color: blueviolet;
+    flex-shrink: 0;
+}
+
+.element {
+    width: 250px;
+    height: 350px;
+    background-color: red;
+    color: black;
+    padding: 30px;
+    border: 8px solid blue;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
