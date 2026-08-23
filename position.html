@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in css</title>
+    <style>
+        /* css positions  */
+        body {
+            background-color: cadetblue;
+            height: 3000px;
+        }
+
+        .parent {
+            width: 80%;
+            height: 2000px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+        }
+
+        .s {
+            background-color: aquamarine;
+            position: static;
+            top: 50px;
+        }
+
+        .r {
+            background-color: aqua;
+            position: relative;
+            top: 150px;
+            z-index: 1;
+        }
+
+        .a {
+            background-color: blueviolet;
+            position: absolute;
+            left: 100px;
+
+        }
+
+        .f {
+            background-color: brown;
+
+        }
+
+        .st {
+            background-color: burlywood;
+
+        }
+
+        /* media queries */
+        .card {
+            background-color: aqua;
+            color: black;
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        p {
+            font-size: 50px;
+        }
+
+
+
+        @media (min-width:400px) {
+            .card {
+                background-color: red;
+            }
+
+        }
+
+        @media (min-width:768px) {
+            .card {
+                background-color: blue;
+            }
+
+            h1 {
+                font-size: 90px;
+            }
+        }
+
+        @media (min-width:1220px) {
+            .card {
+                background-color: cadetblue;
+            }
+        }
+
+        /* css transitions  */
+        h1 {
+            background-color: red;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 5s;
+            transition: all 2s ease-in-out 5s;
+
+
+        }
+
+        h1:hover {
+            transform: scale(2);
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            animation-name: abc;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        /* css animations */
+        @keyframes abc {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(40px);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- positions  -->
+    <div class="parent">
+        <div class="child s">Static</div>
+        <div class="child r">Relative</div>
+        <div class="child a">Absolute</div>
+        <div class="child f">Fixed</div>
+        <div class="child st">Sticky</div>
+    </div>
+
+    <!-- media queries -->
+    <div class="card">
+        <h1>hello batch 2</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cumque sed soluta natus hic numquam
+            consequatur nobis? Placeat nemo adipisci voluptas quod, aspernatur doloribus beatae.</p>
+    </div>
+
+    <!-- css transition  -->
+    <h1>hello</h1>
+    <!-- css animations -->
+    <div>
+    </div>
+</body>
+
+</html>
